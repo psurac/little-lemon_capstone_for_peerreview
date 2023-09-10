@@ -1,0 +1,63 @@
+.reserveation {
+    display: grid;
+    grid-template-areas: 
+        "title title"
+        "stitle stitle"
+        "reserve image";
+    gap: 25px;
+    padding-top: 7vh;
+    padding-bottom: 6vh;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    color: #F4CE14;
+}
+
+.open-hours {
+    grid-area: stitle;
+    text-align: center;
+    color: #F4CE14;
+    font-size: 10px;
+    margin: none;
+}
+
+.reserve {
+    grid-area: reserve;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    justify-content: center;
+}
+
+.reserve input, select {
+    align-self: left;
+    border: 2px #F4CE14 solid;
+    border-radius: 16px;
+    padding: 4px;
+}
+
+.date-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    grid-area: image;
+    align-self: flex-end;
+    justify-self: right;
+    width: 42vw;
+}
+
+@media screen and (max-width: 800px) {
+    .reserveation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 80vw;
+        align-self: center;
+    }
+}

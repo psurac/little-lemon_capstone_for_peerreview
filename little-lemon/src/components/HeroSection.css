@@ -1,0 +1,44 @@
+.hero-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+}
+
+.hero-text .title {
+    color: #F4CE14;
+}
+
+.hero-text .subtitle {
+    color: #FBDABB;
+}
+
+#hero-image {
+    width: 30vw;
+    position: relative;
+    margin-bottom: -25vh;
+    align-self: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .hero-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero-image {
+        width: 60vw;
+    }
+
+    .hero-text {
+        width: 60vw;
+    }
+}
